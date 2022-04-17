@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="15dp"
+    android:padding="4dp"
+    android:background="@color/white"
+    android:orientation="vertical"
+
+
+    >
+
+    <ImageView
+        android:id="@+id/iv_sing_image_detf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:src="@drawable/ic_launcher_foreground"
+
+        android:layout_margin="4dp"
+        ></ImageView>
+    <TextView
+        android:id="@+id/tv_sing_artist_detf"
+        android:text="@string/artist"
+        android:layout_margin="4dp"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textAlignment="center"
+        android:layout_margin="4dp"
+        android:id="@+id/tv_sing_title_detf"
+        android:text="@string/title"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btn_close_det"
+        android:layout_width="wrap_content"
+        android:layout_margin="4dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="@string/close"
+        />
+</LinearLayout>

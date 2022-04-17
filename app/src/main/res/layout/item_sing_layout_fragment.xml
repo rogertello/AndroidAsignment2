@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    app:cardElevation="14dp"
+    app:cardCornerRadius="14dp"
+    android:layout_margin="4dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:outlineSpotShadowColor="@color/purple_700"
+    android:outlineAmbientShadowColor="@color/purple_700"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="4dp">
+
+        <ImageView
+            android:id="@+id/iv_sing_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/ic_launcher_foreground" />
+
+        <TextView
+            android:id="@+id/tv_sing_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imb_play"
+            app:layout_constraintHorizontal_bias="0.06"
+            app:layout_constraintStart_toEndOf="@+id/iv_sing_image"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.168"
+            tools:text="cancion! " />
+
+        <TextView
+            android:id="@+id/tv_sing_artist"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+android:layout_marginLeft="5sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.06"
+            app:layout_constraintStart_toEndOf="@+id/iv_sing_image"
+            app:layout_constraintTop_toBottomOf="@+id/tv_sing_title"
+            app:layout_constraintEnd_toStartOf="@id/tv_sing_price"
+            tools:text="artist! " />
+
+        <TextView
+            android:id="@+id/tv_sing_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/imb_play"
+            app:layout_constraintHorizontal_bias="0.9"
+            app:layout_constraintStart_toEndOf="@+id/tv_sing_artist"
+            app:layout_constraintTop_toBottomOf="@id/tv_sing_title"
+            tools:text="price! " />
+
+        <ImageButton
+
+            android:id="@+id/imb_play"
+            android:src="@drawable/ic_play"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/imb_stop"
+            android:visibility="gone"
+            />
+        <ImageButton
+            android:id="@+id/imb_stop"
+            android:src="@drawable/ic_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:visibility="gone"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

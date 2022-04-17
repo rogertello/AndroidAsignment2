@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swype_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/rv_singslist"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:listitem="@layout/item_sing_layout_fragment"
+    >
+
+</androidx.recyclerview.widget.RecyclerView>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
