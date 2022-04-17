@@ -42,7 +42,6 @@ class fragment_tab3 : Fragment() {
             ?.replace(R.id.container3, SingsListFragment("rock", "music", "song", "50"))
             ?.commit()
 
-
         view.setBackgroundResource(R.color.blue);
     return view
     }
